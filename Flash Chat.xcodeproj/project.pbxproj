@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1597D2F7282D20A90072BFE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1597D2F6282D20A90072BFE7 /* AppDelegate.swift */; };
 		1597D2F9282D20A90072BFE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1597D2F8282D20A90072BFE7 /* SceneDelegate.swift */; };
-		1597D2FB282D20A90072BFE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1597D2FA282D20A90072BFE7 /* ViewController.swift */; };
+		1597D2FB282D20A90072BFE7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1597D2FA282D20A90072BFE7 /* WelcomeViewController.swift */; };
 		1597D2FE282D20A90072BFE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1597D2FC282D20A90072BFE7 /* Main.storyboard */; };
 		1597D300282D20AA0072BFE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1597D2FF282D20AA0072BFE7 /* Assets.xcassets */; };
 		1597D303282D20AA0072BFE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1597D301282D20AA0072BFE7 /* LaunchScreen.storyboard */; };
+		1597D30C282D25780072BFE7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1597D30B282D25780072BFE7 /* RegisterViewController.swift */; };
+		1597D30E282D25C80072BFE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1597D30D282D25C80072BFE7 /* LoginViewController.swift */; };
+		1597D310282D26160072BFE7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1597D30F282D26160072BFE7 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1597D2F3282D20A90072BFE7 /* Flash Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1597D2F6282D20A90072BFE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1597D2F8282D20A90072BFE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1597D2FA282D20A90072BFE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1597D2FA282D20A90072BFE7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1597D2FD282D20A90072BFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1597D2FF282D20AA0072BFE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1597D302282D20AA0072BFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1597D304282D20AA0072BFE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1597D30B282D25780072BFE7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1597D30D282D25C80072BFE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1597D30F282D26160072BFE7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1528D1E8282DC51800F6F3E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1597D2FC282D20A90072BFE7 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1528D1E9282DC52300F6F3E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1597D2EA282D20A90072BFE7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +79,25 @@
 			children = (
 				1597D2F6282D20A90072BFE7 /* AppDelegate.swift */,
 				1597D2F8282D20A90072BFE7 /* SceneDelegate.swift */,
-				1597D2FA282D20A90072BFE7 /* ViewController.swift */,
-				1597D2FC282D20A90072BFE7 /* Main.storyboard */,
+				1528D1E9282DC52300F6F3E3 /* Models */,
+				1597D30A282D25410072BFE7 /* Controllers */,
+				1528D1E8282DC51800F6F3E3 /* Views */,
 				1597D2FF282D20AA0072BFE7 /* Assets.xcassets */,
 				1597D301282D20AA0072BFE7 /* LaunchScreen.storyboard */,
 				1597D304282D20AA0072BFE7 /* Info.plist */,
 			);
 			path = "Flash Chat";
+			sourceTree = "<group>";
+		};
+		1597D30A282D25410072BFE7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1597D2FA282D20A90072BFE7 /* WelcomeViewController.swift */,
+				1597D30B282D25780072BFE7 /* RegisterViewController.swift */,
+				1597D30D282D25C80072BFE7 /* LoginViewController.swift */,
+				1597D30F282D26160072BFE7 /* ChatViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1597D2FB282D20A90072BFE7 /* ViewController.swift in Sources */,
+				1597D2FB282D20A90072BFE7 /* WelcomeViewController.swift in Sources */,
 				1597D2F7282D20A90072BFE7 /* AppDelegate.swift in Sources */,
 				1597D2F9282D20A90072BFE7 /* SceneDelegate.swift in Sources */,
+				1597D30E282D25C80072BFE7 /* LoginViewController.swift in Sources */,
+				1597D310282D26160072BFE7 /* ChatViewController.swift in Sources */,
+				1597D30C282D25780072BFE7 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
